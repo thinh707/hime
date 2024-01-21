@@ -8,21 +8,8 @@ import {
   Modal,
   ActivityIndicator,
 } from "react-native";
-<<<<<<< HEAD
 import { Camera } from "expo-camera";
 import { upload, ocr } from "../utils/http";
-=======
-import { useState, useEffect } from "react";
-import { CameraScreen, Camera } from "react-native-camera-kit";
-import { upload, ocr } from "../api/services";
-import {
-  ViroARScene,
-  ViroText,
-  ViroConstants,
-  ViroARSceneNavigator,
-} from '@viro-community/react-viro';
-
->>>>>>> 987e518 (Update ...)
 
 function CameraScreen({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);
