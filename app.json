@@ -1,0 +1,51 @@
+{
+  "name": "hime",
+  "displayName": "hime",
+  "slug": "hime",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./src/assets/icon.png",
+  "userInterfaceStyle": "light",
+  "splash": {
+    "image": "./src/assets/splash.png",
+    "resizeMode": "contain",
+    "backgroundColor": "#ffffff"
+  },
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./src/assets/icon.png",
+      "backgroundColor": "#ffffff",
+      "package": "com.dttv.hime"
+    },
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.BIND_DEVICE_ADMIN"
+    ],
+    "package": "com.dttv.hime",
+    "versionCode": 16
+  },
+  "web": {
+    "favicon": "./src/assets/favicon.png"
+  },
+  "plugins": [
+    [
+      "expo-camera",
+      {
+        "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+      }
+    ]
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "07b6f71b-61aa-4083-ae07-25db0ddb6591"
+    }
+  },
+  "owner": "phnaharris"
+}
